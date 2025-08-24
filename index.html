@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>بوت تيليجرام</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<h2>تسجيل الدخول للبوت</h2>
+
+<form id="loginForm">
+    <label>API ID:</label>
+    <input type="number" id="api_id" required><br><br>
+    <label>API HASH:</label>
+    <input type="text" id="api_hash" required><br><br>
+    <label>رقم الهاتف:</label>
+    <input type="text" id="phone" placeholder="+212..." required><br><br>
+    <button type="submit">إرسال كود التفعيل</button>
+</form>
+
+<form id="verifyForm" style="display:none;">
+    <label>كود التفعيل:</label>
+    <input type="text" id="code" required><br><br>
+    <button type="submit">تحقق وابدأ البوت</button>
+</form>
+
+<h3>أدخل روابط المجموعات</h3>
+<textarea id="groups" rows="10" cols="50" placeholder="سطر لكل مجموعة"></textarea><br>
+<button id="startBot">ابدأ الإرسال</button>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
